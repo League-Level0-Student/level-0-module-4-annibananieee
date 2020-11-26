@@ -10,30 +10,47 @@ public class SleepyHead {
 		// boolean variables can only hold one of two values - true or false
 
 		/************************  SLEEPY HEAD  **************************/
-		boolean isWeekend;
+		boolean isWeekend = false;
 		// Write code to ask the user what day it is.
-        
+        String day = JOptionPane.showInputDialog("what day is it?");
 		// Set the boolean isWeekend based on the value they enter
-		
+		if(day.equals("saturday") || day.equals("sunday")) {
+			isWeekend = true;
+		}
+		else {
+			isWeekend = false;
+		}
 		
 		// If it is the weekend, tell the user they get to sleep in.
-		
+		if(isWeekend==true) {
+		JOptionPane.showMessageDialog(null,"ayy you get to sleep in");
+		}
 		// If it is not the weekend, tell them to get out of bed and go to school!
-		
-		
+		else {
+		JOptionPane.showMessageDialog(null,"get out of bed and go to school. HURRY!");
+		}
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;
 		// Write code to ask the user what percentage they scored in their last exam
-
-		
+		String input = JOptionPane.showInputDialog("what percent did you get on your last test?");
+		int exam = Integer.parseInt(input); 
 		// If they scored more than 70, they passed the exam.
-		// Set the boolean passedExam based on their score.
-		
+		if(exam>70) {
+			// Set the boolean passedExam based on their score.
+			passedExam = true; 
+		}
+		else {
+			passedExam = false;
+		}
 		// If the user passed the exam, congratulate them
-		
+		if(passedExam == true) {
+			JOptionPane.showMessageDialog(null,"congrats u passed");
+		}
 		// otherwise, wish them better luck next time.
-		
+		else {
+			JOptionPane.showMessageDialog(null,"u should have studied");
+		}
 		
 		/************************  GAME OVER  **************************/
 
@@ -46,10 +63,11 @@ public class SleepyHead {
 				gameIsOver = true;
 			
 			// If they answer "yes", change gameIsOver to true
-
+			
+			
 		}
 		// Tell the user "game is over" 
-		
+		JOptionPane.showMessageDialog(null, "game is over");
 		
 		/***********************   RED SQUARE  ********************/
 		
