@@ -8,13 +8,12 @@ void setup() {
 void draw() {
    background(face);
    println("X="+mouseX);
-   println("Y="+mouseY);
-     ellipse(245,230,50,50);
-     ellipse(545,225,50,50);
-        fill(#0D0C0C);
+   println("Y="+mouseY);   
+           fill(#121111);
       ellipse(545,225,30,30);
       ellipse(545,225,30,30);
-
+           fill(#FCF7F7);
+     
 
 }
 
